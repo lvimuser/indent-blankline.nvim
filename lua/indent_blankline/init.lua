@@ -161,7 +161,7 @@ local refresh = function(scroll)
             vim.bo.buftype,
             v "indent_blankline_buftype_exclude" or {},
             v "indent_blankline_bufname_exclude" or {},
-            vim.fn["bufname"] ""
+            vim.fn["bufname"]() ""
         )
     then
         if vim.b.__indent_blankline_active then
